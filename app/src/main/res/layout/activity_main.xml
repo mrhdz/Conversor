@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/miTabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEEFE7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#002333"
+            android:gravity="center"
+            android:text="@string/conver"
+            android:textColor="#F8F4F4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B4BEC9" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Tab 1: Weight -->
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutControles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerUnidades"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:entries="@array/unidadesPeso" />
+
+                    <EditText
+                        android:id="@+id/txtValorPeso"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/ingrese_un_valor"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConvertir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#BF930F"
+                    android:text="@string/convertir"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/gramos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtGramos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/libras"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtlibras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/kilos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtKilos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/toneladas"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtToneladas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Tab 2: Length -->
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerUnidadesLongitud"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:entries="@array/unidadesLongitud" />
+
+                    <EditText
+                        android:id="@+id/txtValorLongitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/ingrese_un_valor"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConvertirLongitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#F2BE22"
+                    android:text="@string/convertir"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/milimetros"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtMilimetros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/centimetros"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtCentimetros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/metros"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtMetros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/kilometros"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtKilometros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- Tab 3: Temperature -->
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerUnidadesTemperatura"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:entries="@array/unidadesTemperatura" />
+
+                    <EditText
+                        android:id="@+id/txtValorTemperatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/ingrese_un_valor"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConvertirTemperatura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#8C543F"
+                    android:text="@string/convertir"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/celsius"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtCelsius"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/fahrenheit"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtFahrenheit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:height="50dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/kelvin"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtKelvin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/guion" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

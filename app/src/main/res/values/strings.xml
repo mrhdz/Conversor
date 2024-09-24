@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LH-ConversorUnidades</string>
+    <string name="ingrese_un_valor">Ingrese un valor</string>
+    <string name="convertir">CONVERTIR</string>
+    <string name="guion"> - </string>
+    <string name="conver">CONVERSOR DE UNIDADES</string>
+    <string name="error1">Por favor, ingrese un valor</string>
+    <string name="result">#.####</string>
+    <string name="error2">Por favor, ingrese un número válido</string>
+    <string name="error3">Por favor, ingrese un valor positivo</string>
+    <string name="errortemp1">La temperatura no puede ser menor que el cero absoluto (-273.15°C)</string>
+    <string name="errortemp2">La temperatura no puede ser menor que el cero absoluto (-459.67°F)</string>
+    <string name="errortemp3">La temperatura en Kelvin no puede ser negativa</string>
+
+    <!-- UNIDADES DE PESO -->
+    <string name="gramos">Gramos</string>
+    <string name="libras">Libras</string>
+    <string name="kilos">Kilos</string>
+    <string name="toneladas">Toneladas</string>
+
+    <!-- UNIDADES DE LONGITUD -->
+    <string name="milimetros">Milímetros</string>
+    <string name="centimetros">Centímetros</string>
+    <string name="metros">Metros</string>
+    <string name="kilometros">Kilómetros</string>
+
+    <!-- UNIDADES DE TEMPERATURA -->
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+</resources>

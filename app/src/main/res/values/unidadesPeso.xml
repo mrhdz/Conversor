@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidadesPeso">
+        <item>Gramos</item>
+        <item>Libras</item>
+        <item>Kilos</item>
+        <item>Toneladas</item>
+    </string-array>
+
+    <string-array name="unidadesLongitud">
+        <item>Milímetros</item>
+        <item>Centímetros</item>
+        <item>Metros</item>
+        <item>Kilómetros</item>
+    </string-array>
+
+    <string-array name="unidadesTemperatura">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
